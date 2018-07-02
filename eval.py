@@ -68,7 +68,6 @@ def main(_):
                 img.write(sess.run(tf.image.encode_jpeg(generated)))
                 end_time = time.time()
                 tf.logging.info('Elapsed time: %fs' % (end_time - start_time))
-
                 tf.logging.info('Done. Please check %s.' % generated_file)
             #tf.train.export_meta_graph(filename='model.meta',collection_list=['input_tensor'],as_text=True)
             tf.train.export_meta_graph(filename='model.meta',as_text=True)
