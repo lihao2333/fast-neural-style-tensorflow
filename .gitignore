@@ -90,7 +90,6 @@ ENV/
 
 
 slim-official/
-train2014
 generated/
 models/
 tensorboard/
